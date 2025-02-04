@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Play Helper - Download Now</title>
+    <title>Google Play Help - Download Now</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -11,6 +11,26 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff5f6d, #8e44ad);
+            color: white;
+        }
+        .navbar, .footer {
+            background: linear-gradient(135deg, #ff5f6d, #8e44ad);
+            border-bottom: 2px solid white;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #ff5f6d, #8e44ad);
+            border: none;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+        .section-card {
+            background: linear-gradient(135deg, #ff5f6d, #8e44ad);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         @media (max-width: 768px) {
             h2 { font-size: 1.8rem; }
@@ -21,9 +41,9 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Google Play Helper</a>
+            <a class="navbar-brand" href="#">Google Play Help</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,22 +83,28 @@
         <h2>App Features</h2>
         <div class="row">
             <div class="col-md-4 col-12 mb-3">
-                <h3>🔒 Secure</h3>
-                <p>Advanced encryption and security protocols.</p>
+                <div class="section-card">
+                    <h3>🔒 Secure</h3>
+                    <p>Advanced encryption and security protocols.</p>
+                </div>
             </div>
             <div class="col-md-4 col-12 mb-3">
-                <h3>⚡ Fast</h3>
-                <p>Optimized for speed and efficiency.</p>
+                <div class="section-card">
+                    <h3>⚡ Fast</h3>
+                    <p>Optimized for speed and efficiency.</p>
+                </div>
             </div>
             <div class="col-md-4 col-12 mb-3">
-                <h3>🎨 User-Friendly</h3>
-                <p>Intuitive and seamless experience.</p>
+                <div class="section-card">
+                    <h3>🎨 User-Friendly</h3>
+                    <p>Intuitive and seamless experience.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="text-center bg-light py-5">
+    <section id="download" class="text-center py-5">
         <h2>Download Now</h2>
         <p>Get the latest version of our app.</p>
         <a href="myapp.apk" class="btn btn-primary btn-lg">📥 Download APK</a>
@@ -93,8 +119,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 My App. All rights reserved.</p>
+    <footer class="footer text-center py-3">
+        <p>&copy; 2025 Google Play Help. All rights reserved.</p>
     </footer>
 </body>
 </html>
