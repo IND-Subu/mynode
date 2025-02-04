@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Download Now</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        @media (max-width: 768px) {
+            h2 { font-size: 1.8rem; }
+            .carousel img { height: 250px; object-fit: cover; }
+            .btn-lg { font-size: 1rem; padding: 10px 15px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <header id="hero" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jpg" class="d-block w-100" alt="App Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jpg" class="d-block w-100" alt="App Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jpg" class="d-block w-100" alt="App Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="container text-center my-5">
+        <h2>App Features</h2>
+        <div class="row">
+            <div class="col-md-4 col-12 mb-3">
+                <h3>🔒 Secure</h3>
+                <p>Advanced encryption and security protocols.</p>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+                <h3>⚡ Fast</h3>
+                <p>Optimized for speed and efficiency.</p>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+                <h3>🎨 User-Friendly</h3>
+                <p>Intuitive and seamless experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="text-center bg-light py-5">
+        <h2>Download Now</h2>
+        <p>Get the latest version of our app.</p>
+        <a href="myapp.apk" class="btn btn-primary btn-lg">📥 Download APK</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center my-5">
+        <h2>Contact Us</h2>
+        <p>Email: support@myapp.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Follow us on social media!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 My App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
